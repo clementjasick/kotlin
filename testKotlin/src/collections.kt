@@ -60,16 +60,82 @@ fun serie(n : Int): List<Int> {
     return liste
 }
 fun serieInverse(n : Int): List<Int> = serie(n).reversed()
-fun listepair(list:List<Int>){
+fun listepair(list:List<Int>): List<Int>{
     val listepair = mutableListOf<Int>()
     for (nb in list){
         if (nb%2==0){
             listepair.add(nb)
+        }
+    }
+    return listepair
 }
+fun listeimpair(list:List<Int>): List<Int>{
+    val listeimpair = mutableListOf<Int>()
+    for (nb in list){
+        if (nb%2==1){
+            listeimpair.add(nb)
+        }
+    }
+    return listeimpair
+}
+fun listediviseurs(nb: Int): List<Int>{
+    val liste= mutableListOf<Int>()
+    for (i in 1..nb){
+        if (nb%i==0){
+            liste.add(i)
+        }
+    }
+    return liste
+}
+fun estpremier(nb: Int): Boolean{
+    var res = true
+    if (listediviseurs(nb).size == 2){
+        res = true
+    }
+    else {
+        res = false
+    }
+    return res
+}
+fun estparfait(nb: Int): Boolean{
+    val liste= mutableListOf<Int>()
+    var res = true
+    for (i in 1..nb-1){
+        if (nb%i==0){
+            liste.add(i)
+        }
+    }
+    if (liste.sum() == nb){
+        res = true
+    }
+    else {
+        res = false
+    }
+    return res
+}
+fun sommeChiffres(n: Int): Int{
+    val liste= mutableListOf<Int>()
+    var q = n
+    var r = 0
+    while (q>10){
+        q=q/10
+        r=q%10
+        liste.add(q)
+        println(q)
+        println(r)
+    }
+    return liste.sum()
+}
+
 fun main(){
     //println(tab())
     //println(ent())
     //println(map())
     //println(serieInverse(5))
-    println(listepair(25))
+    //println(listepair(listOf(25,47,96,54)))
+    //println(listeimpair(listOf(25,47,96,54)))
+    //println(listediviseurs(11))
+    //println(estpremier(10))
+    //println(estparfait(8))
+    println(sommeChiffres(125))
 }

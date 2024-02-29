@@ -99,4 +99,5 @@ fun main(){
     //println(pair(10))
     //println(multiple(5,50))
     //println(devinette())
+    println(125/10)
 }
