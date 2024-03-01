@@ -117,14 +117,16 @@ fun sommeChiffres(n: Int): Int{
     val liste= mutableListOf<Int>()
     var q = n
     var r = 0
-    while (q>10){
-        q=q/10
+    while (q!=0){
         r=q%10
-        liste.add(q)
-        println(q)
-        println(r)
+        q=q/10
+        liste.add(r)
     }
     return liste.sum()
+}
+fun nombreAmi(nb1: Int,nb2: Int): Boolean{
+    if (sommeChiffres(nb1)==sommeChiffres(nb2)){return true} else {return false}
+
 }
 
 fun main(){
@@ -137,5 +139,6 @@ fun main(){
     //println(listediviseurs(11))
     //println(estpremier(10))
     //println(estparfait(8))
-    println(sommeChiffres(125))
+    //println(sommeChiffres(125))
+    //println(nombreAmi(93,667))
 }
