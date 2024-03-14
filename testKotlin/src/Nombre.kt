@@ -1,4 +1,4 @@
-class nombre {
+class Nombre {
     var nb: Int = 0
     constructor(nb: Int){
         this.nb=nb
@@ -13,7 +13,7 @@ class nombre {
         }
         return liste
     }
-    fun estAmi(nb2: nombre): Boolean{
+    fun estAmi(nb2: Nombre): Boolean{
         if (this.sommeChiffres()==nb2.sommeChiffres()){return true} else {return false}
     }
     fun estPremier(): Boolean{

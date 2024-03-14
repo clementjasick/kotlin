@@ -1,4 +1,4 @@
-class personne {
+class Personne {
     var nom: String = ""
     var taille: Double = 0.0
     var poids: Int = 0

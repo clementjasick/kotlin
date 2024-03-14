@@ -1,6 +1,6 @@
 class Voiture {
     var marque: String = ""
-    var modele: String = ""
+     var modele: String = ""
     var vitesse: Int = 0
     constructor() {
     }
