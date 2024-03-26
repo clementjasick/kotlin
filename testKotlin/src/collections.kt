@@ -141,4 +141,5 @@ fun main(){
     //println(estparfait(8))
     //println(sommeChiffres(125))
     //println(nombreAmi(93,667))
+
 }
