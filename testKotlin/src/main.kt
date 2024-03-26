@@ -16,7 +16,7 @@ fun main(){
     //println(nb1.estPremier())
     //println(nb1.estAmi(nb1))
     //println(nb2.diviseurs())
-    //println(nb2.estPremier())
+    //println(nb2.estPremier()) 
     //println(nb2.estAmi(nb2))
 
     val personne1 = Personne("Hugo", 1.80 , 54)
