@@ -19,11 +19,11 @@ fun main(){
     //println(nb2.estPremier())
     //println(nb2.estAmi(nb2))
 
-    val personne1 = Personne("hugo", 1.80 , 54)
+    val personne1 = Personne("Hugo", 1.80 , 54)
     //println(personne1.imc())
     //println(personne1.signification())
 
-    val client1 = Location("Francois", "E", 7, 750)
+    val client1 = Location("François", "E", 7, 750)
     println(client1.montantTotal())
 
 }
