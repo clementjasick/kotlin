@@ -1,5 +1,5 @@
 fun bonjour(nom:String): String {
-    return("bonjour $nom")
+    return("bonjour $nom") 
 }
 fun nombre(n1: Int, n2: Int ): String{
     return("somme: $n1 + $n2 = ${n1 + n2} difference : $n1 - $n2 = ${n1 - n2} multiplication : $n1 * $n2 = ${n1 * n2} division : $n1 / $n2 = ${n1 / n2} ")
